@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WP Pusher Checkout</title>
+  </head>
+  <body>
+    <section class="wp-pusher">
+      <!-- Main WP-Pusher BG starts here -->
+      <header class="header">
+        <div class="logo">
+          <img src="assets/wppusher-logo.png" alt="wp-pusher-logo" />
+        <nav class="nav-bar" >
+            <a href="#">Download</a>
+            <a href="#">Learn more</a>
+            <a href="#">Pricing</a>
+            <a href="#">Help</a>
+            <a href="#" class="account">Account</a>
+        </nav>
+      </header>
+      
+      <main class="panel">
+        <section class="container-box">
+          <!-- left box content starts -->
+          <section class="left-content">
+            <div class="left-header-text">
+              <h1>Checkout</h1>
+            </div>
+            <form action="post">
+              <!-- Your Basic Information begins here -->
+              <div class="your-basic-information">
+                <span class="circular-symbol"><span class="num-1">1</span></span>
+                <span class="basic-information">Your Basic Information</span>
+
+                <div class="form-item">
+                  <div class="form-col">
+                    <label for="name-1"> First Name</label>
+                    <br>
+                    <input type="text" id="name-1" name="first_name" placeholder="Jane" required>
+                  </div>
+
+                  <div class="form-col-2">
+                    <label for="name-2">Last Name</label>
+                    <br>
+                    <input type="text" id="name-2" name="last_name" placeholder="Doe" required>
+                  </div>
+                </div>
+
+                <div class="form-span">
+                  <label for="email">E-mail</label>
+                  <br>
+                  <input type="email" id="email" name="email" placeholder="janedoe@example.com" required>
+                </div>
+              </div>
+
+              <!-- Your Payment Information begins here -->
+              <div class="your-payment-information">
+                <span class="circular-symbol"><span class="num-2">2</span></span><span class="payment">Your Payment Information</span>
+
+                <div class="credit-card">
+                  <label for="credit-card">Credit Card</label>
+                  <br>
+                  <div class="inputs">
+                    <input type="text" inputmode="numeric" placeholder="Card Number" maxlength="19" pattern="[0-9]" class="first" required>
+                    <input type="text" inputmode="numeric" placeholder="MM/YY" maxlength="5"  pattern="(0[1-9]|[0-2])\/\d{2}" class="second" required>
+                    <input type="text" inputmode="numeric" placeholder="CVC"  maxlength="3" class="third" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="submit">
+                <button type="submit" class="pusher-button">Buy WP Pusher</button>
+                <span class="circular-symbol"></span>
+                <span class="help-sign"><span class="question-mark">?</span><b>Need any help?</b> Don't hesitate to <u>contact</u></span>
+                <p>support!</p>
+                <img src="assets/powered_by_stripe.png" alt="powered_by_stripe-logo">
+              </div>
+            </form>
+          </section>
+
+          <!-- Right box content begins here -->
+          <section class="right-content">
+            <div class="content-box">
+              <div class="right=header-text">
+                <h1>Freelancer</h1>
+
+                <div class="rating">
+                  <span class="dollar-sign">$</span><span class="figure">99</span><span class="year"> / year</span>
+                  <p>
+                    <i>Automatically renews <br>after 1 year</i>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Pointer & Details -->
+              <div class="pointer">
+                <img src="assets/checkbox.png" id="img-1">
+                <span class="note-1"> Use on 5 client sites</span>
+                <br>
+
+                <img src="assets/checkbox.png"  id="img-2">
+                <span class="note-2">Private repositories</span>
+                <br>
+
+                <img src="assets/checkbox.png" id="img-3">                
+                <span class="note-3">Email support</span>   
+                <br>              
+              </div>
+
+              <div class="detail-1"> 
+                <p>Need <b>20</b> client sites? </p>
+                  <span><b>Switch to the <i>Agency</i> plan.</b></span>  
+              </div>
+
+              <div class="detail-2">
+                <p><i>FTP is horrible to deal with. <b>WP Pusher</b> solves that issue, and the customer support is awesome!</i></p>
+              </div>
+               
+              <div class="kirk">
+                <img src="assets/kirk.png" alt="kirk_beard">
+                <b><h2>Kirk Beard</h2></b>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <footer>
+        <p>&#169 2018 WP Pusher IVS  · <a href="#"> Terms of Service</a></p>
+      </footer>
+
+    </section>
+  </body>
+</html>
